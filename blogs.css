@@ -109,6 +109,7 @@ header nav ul li a:hover {
     padding: 60px 5%;
     max-width: 1200px;
     margin: 0 auto;
+    background-image: linear-gradient(rgba(61, 43, 31, 0.7), rgba(61, 43, 31, 0.7)), url('../skin 911/blogs background.jpeg');
 }
 
 .blog-grid {
@@ -292,4 +293,5 @@ footer {
         max-width: 300px;
         margin: 0 auto;
     }
+
 }
