@@ -72,7 +72,12 @@
                     </div>
                 </div>
 
-                <form class="signup-form" id="signupForm">
+                <form class="signup-form" id="signupForm"
+                action="https://api.web3forms.com/submit"
+                method="POST">
+
+                    <input type="hidden" name="access_key" value="3b2cb14d-002c-41b0-bccf-5a71e49c5c72">
+                    
                     <h2>Sign Up for <span id="selectedPlan">Premium</span></h2>
                     
                     <div class="form-group">
@@ -216,5 +221,6 @@
     </script>
 </body>
 </html>
+
 
 
