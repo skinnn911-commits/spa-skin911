@@ -72,55 +72,63 @@
                     </div>
                 </div>
 
-                <form class="signup-form" id="signupForm"
-                action="https://api.web3forms.com/submit"
-                method="POST">
+               <form class="sign-up-form" id="sign-up-form" action="https://api.web3forms.com/submit" method="POST">
 
-                    <input type="hidden" name="access_key" value="3b2cb14d-002c-41b0-bccf-5a71e49c5c72">
-                    
-                    <h2>Sign Up for <span id="selectedPlan">Premium</span></h2>
-                    
-                    <div class="form-group">
-                        <label for="firstName">First Name *</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </div>
+              <input type="hidden" name="access_key" value="3b2cb14d-002c-41b0-bccf-5a71e49c5c72">
+              <input type="hidden" name="subject" value="New Membership Sign-Up">
+              <input type="hidden" name="reply_to" value="skinnn911@gmail.com">
+              <input type="hidden" name="redirect" value="https://skinnn911-commits.github.io/spa-skin911/membership-signup.html">
 
-                    <div class="form-group">
-                        <label for="lastName">Last Name *</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+  </div>
 
-                    <div class="form-group">
-                        <label for="membershipType">Selected Plan *</label>
-                        <input type="text" id="membershipType" name="membershipType" readonly value="Premium">
-                    </div>
+ 
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Email Address" required>
+  </div>
 
-                    <div class="form-group">
-                        <label for="billingCycle">Billing Cycle *</label>
-                        <select id="billingCycle" name="billingCycle" required>
-                            <option value="monthly">Monthly</option>
-                            <option value="yearly">Yearly (Save 10%!)</option>
-                        </select>
-                    </div>
+ 
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+  </div>
 
-                    <div class="terms-checkbox">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label>
-                    </div>
+ 
+  <div class="form-group">
+    <label for="membership_type">Membership Type</label>
+    <input type="text" id="membership_type" name="membership_type" value="Premium" readonly>
+  </div>
 
-                    <button type="submit">Complete Sign Up</button>
+  
+  <div class="form-group">
+    <label for="billing_cycle">Billing Cycle</label>
+    <select id="billing_cycle" name="billing_cycle" required>
+      <option value="" disabled selected>Select Billing Cycle</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Yearly">Yearly</option>
+    </select>
+  </div>
 
-                </form>
+ 
+  <div class="form-group">
+    <label>
+      <input type="checkbox" name="terms" value="Agreed" required>
+      I agree to the <a href="https://skinnn911-commits.github.io/spa-skin911/membership-signup.html" target="_blank">Terms and Conditions</a> and <a href="https://skinnn911-commits.github.io/spa-skin911/membership-signup.html" target="_blank">Privacy Policy</a>
+    </label>
+  </div>
+
+ 
+  <button type="submit">Complete Sign-Up</button>
+</form>
             </div>
         </section>
     </main>
@@ -222,6 +230,7 @@
     </script>
 </body>
 </html>
+
 
 
 
