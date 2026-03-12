@@ -150,10 +150,20 @@
                 
                 <div class="footer-column">
                     <h3>Sign up for texts & emails</h3>
-                    <form class="footer-email-form">
-                        <input type="email" placeholder="Email" required />
-                        <button type="submit" aria-label="Subscribe">→</button>
-                    </form>
+                   <form class="footer-email-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST">
+
+                    <input type="hidden"
+                    name="access_key"
+                    value="3b2cb14d-002c-41b0-bccf-5a71e49c5c72">
+
+                    <input type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
+                    <button type>Submit</button>
+                   </form>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/skin911._?igsh=a3pnamYya2lzdG5n" aria-label="Instagram"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjI4IiBjeT0iMTIiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz48L3N2Zz4=" alt="Instagram" width="40" height="40" /></a>
                     </div>
@@ -199,9 +209,9 @@
                 <p>&copy; 2024 Skin 911. All rights reserved.</p>
             </div>
         </footer> 
-        
 </body>
 
 </html>
+
 
 
